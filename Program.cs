@@ -24,7 +24,7 @@ namespace JurosSimples
             Taxa = Convert.ToDecimal(Entrada2);
             Tempo = Convert.ToInt16(Entrada3);
            
-            JurosFinal= Capital*Taxa*Tempo;
+            JurosFinal= Capital*(Taxa/100)*Tempo;
             Montante= (Capital+JurosFinal);
 
             Console.Beep();
